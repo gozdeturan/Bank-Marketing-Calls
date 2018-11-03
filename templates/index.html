@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h2>Sample</h2>
+  <form method="get" action="/plot">
+    <label for="sample_count">Sample Count</label>
+    <input name="sample_count" id="sample_count" required>
+
+    <input type="submit" value="Plot it!">
+  </form>
+
+  <h2>Account Info</h2>
+  <form method="get" action="/plot-for-account">
+    <label for="account_code">Account Code</label>
+    <input name="account_code" id="account_code" required>
+
+
+    <input type="submit" value="Plot for account">
+  </form>
+{% endblock %}
